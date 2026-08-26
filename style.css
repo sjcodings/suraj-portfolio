@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #191f31;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #01071b;
+  padding: 10px;
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(149, 78, 215);
+}
+
+.portfolioName {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.portfolioName > span {
+  color: rgb(149, 78, 215);
+}
+
+/* first section  */
+
+.firstSection {
+  /* background-color: red;  */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 0px;
+}
+
+.left {
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+}
+
+.left > span {
+  color: rgb(149, 78, 215);
+}
+
+.right img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.png {
+  display: flex;
+  width: 80%;
+  gap: 30px;
+  margin-top: 10px;
+}
+.png img {
+  width: 30px;
+  transition: 0.3s ease;
+}
+.png img:hover {
+  transform: translateY(-5px);
+  width: 30px;
+}
+
+/* Second Section  */
+
+hr {
+  margin: 5% 50px 0 5%;
+  height: 1px solid gray;
+}
+
+.head > h1 {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.skiilSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills {
+  /* border: 1px solid gray; */
+  padding: 2rem;
+  margin: 10px 50px 0 5%;
+  background-color: #01071b;
+  border-radius: 20px;
+}
+
+/* this is html percentage animation  */
+.percentage {
+  margin-top: 10px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  position: relative;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#html {
+  color: #f06529;
+}
+
+.percentage::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 28px;
+  width: 0;
+  background-color: #f06529;
+  transition: 1s ease;
+  border-radius: 20px;
+}
+
+.percentage:hover::after,
+.percentage:active::after {
+  width: 80%;
+}
+
+/* this is css percentage animation  */
+
+.Csspercentage {
+  margin-top: 10px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  position: relative;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#css {
+  color: rgb(102, 51, 153);
+}
+
+.Csspercentage::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 28px;
+  width: 0;
+  background-color: rgb(102, 51, 153);
+  transition: 1s ease;
+  border-radius: 20px;
+}
+
+.Csspercentage:hover::after,
+.Csspercentage:active::after {
+  width: 75%;
+}
+
+/* this is js percentage animation  */
+
+.Jspercentage {
+  margin-top: 10px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  position: relative;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#js {
+  color: rgb(240, 219, 79);
+}
+
+.Jspercentage::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 28px;
+  width: 0;
+  background-color: rgb(240, 219, 79);
+  transition: 1s ease;
+  border-radius: 20px;
+}
+
+.Jspercentage:hover::after,
+.Jspercentage:active::after {
+  width: 50%;
+}
+
+/* this is react percentage animation  */
+
+.Reactpercentage {
+  margin-top: 10px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  position: relative;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#react {
+  color: rgb(97, 219, 251);
+}
+
+.Reactpercentage::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 28px;
+  width: 0;
+  background-color: rgb(97, 219, 251);
+  transition: 1s ease;
+  border-radius: 20px;
+}
+
+.Reactpercentage:hover::after,
+.Reactpercentage:active::after {
+  width: 45%;
+}
+
+/* Project section begins  */
+
+.projectContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.poftfolio {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  transition: 1s ease;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.poftfolio:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-title {
+  text-align: left;
+  background-color: #01071b;
+  width: 103px;
+  padding: 5px;
+  border-radius: 100px;
+}
+.poftfolio > h5 {
+  margin: 20px 0px;
+}
+
+.ecom {
+  background-color: #01071b;
+  width: 90px;
+}
+
+.desc {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* footer container begins  */
+
+.footer-container {
+  text-align: center;
+  height: 50px;
+  background-color: #171b25;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.footer-container > h5 {
+  font-weight: 300;
+}
+
+
+/* <--------------------------------------- Media Queary Begins -------------------------------------> */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* Navigation */
+  nav {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .portfolioName {
+    font-size: 26px;
+  }
+
+  nav ul {
+    gap: 18px;
+  }
+
+  /* First Section */
+  .firstSection {
+    margin: 60px 30px;
+    gap: 40px;
+  }
+
+  .left {
+    font-size: 2rem;
+  }
+
+  .right img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .png {
+    gap: 20px;
+  }
+
+  /* Skills */
+  .skills {
+    margin: 10px 30px;
+    padding: 1.5rem;
+  }
+
+  /* Projects */
+  .projectContainer {
+    gap: 20px;
+    padding: 0 25px;
+  }
+
+  .poftfolio {
+    width: 30%;
+    height: 300px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer-container {
+    margin-top: 30px;
+  }
+}
+
+
+/* =========================
+   MOBILE DEVICES
+   Up to 768px
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .portfolioName {
+    font-size: 25px;
+  }
+
+  nav ul {
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  /* First Section */
+  .firstSection {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 50px 20px;
+    gap: 30px;
+  }
+
+  .left {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .right img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .png {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .png img {
+    width: 28px;
+  }
+
+  /* Horizontal Line */
+  hr {
+    margin: 5% 20px 0 20px;
+  }
+
+  /* Section Headings */
+  .head > h1 {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  /* Skills */
+  .skills {
+    margin: 10px 20px;
+    padding: 1.2rem;
+  }
+
+  .skills p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Projects */
+  .projectContainer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .poftfolio {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Footer */
+  .footer-container {
+    height: auto;
+    padding: 15px 10px;
+    margin-top: 30px;
+  }
+
+  .footer-container > h5 {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE DEVICES
+   Up to 480px
+   ========================= */
+
+@media (max-width: 480px) {
+
+  /* Navigation */
+  .portfolioName {
+    font-size: 22px;
+  }
+
+  nav ul {
+    gap: 12px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+  }
+
+  /* First Section */
+  .firstSection {
+    margin: 40px 15px;
+  }
+
+  .left {
+    font-size: 1.5rem;
+  }
+
+  .right img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .png {
+    gap: 15px;
+  }
+
+  .png img {
+    width: 25px;
+  }
+
+  /* Section Heading */
+  .head > h1 {
+    font-size: 24px;
+  }
+
+  /* Skills */
+  .skills {
+    margin: 10px 15px;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .skills h3 {
+    font-size: 18px;
+  }
+
+  .skills p {
+    font-size: 13px;
+  }
+
+  /* Percentage bars */
+  .percentage,
+  .Csspercentage,
+  .Jspercentage,
+  .Reactpercentage {
+    height: 27px;
+  }
+
+  .percentage::after,
+  .Csspercentage::after,
+  .Jspercentage::after,
+  .Reactpercentage::after {
+    height: 25px;
+  }
+
+  /* Projects */
+  .projectContainer {
+    padding: 0 15px;
+  }
+
+  .poftfolio {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .poftfolio > h5 {
+    font-size: 14px;
+  }
+
+  .portfolio-title {
+    font-size: 13px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  /* Footer */
+  .footer-container > h5 {
+    font-size: 11px;
+  }
+}

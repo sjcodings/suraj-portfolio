@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #191f31;
+  color: white;
+}
+
+nav h3{
+    color: white;
+    background-color: #171b25;
+    padding: 10px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+
+}
+
+.form-dashboard{
+    background-color: #171b25;
+    padding: 2%;
+    border-radius: 20px;
+    width: 40vw;
+}
+
+p{
+    font-size: 15px;
+    color: gray;
+}
+
+.form-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.form-details input{
+    border: 1px solid transparent;
+    outline: none;
+    padding: 10px ;
+    background: none;
+    margin: 5px 0 20px 0;
+    border-radius: 5px;
+    color: white;
+    transition: 1s ease;
+}
+
+.form-details input:focus{
+    border-color: rgb(102, 208, 243);
+}
+
+.head-info{
+    margin-bottom: 40px;
+}
+
+
+.form-details textarea{
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 1s ease;
+    margin: 5px 0 20px 0;
+}
+
+.form-details textarea:focus{
+    border-color: rgb(102, 208, 243);
+}
+
+.button button{
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    background-color: #181355;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+button:hover{
+     background-color: #141135;
+     transform: translateY(-2px);
+}
+
+/* footer section begins here..  */
+
+.footer-container {
+  text-align: center;
+  height: 50px;
+  background-color: #171b25;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.footer-container > h5 {
+  font-weight: 300;
+}
+
+
+
+/* <--------------------------------------- Media Query Begins -------------------------------------> */
+
+
+/* =========================
+   TABLET DEVICES
+   769px - 1024px
+   ========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  nav h3 {
+    font-size: 22px;
+    padding: 12px 20px;
+  }
+
+  .form-container {
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    padding: 40px 30px;
+  }
+
+  .form-dashboard {
+    width: 60vw;
+    padding: 25px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .head-info {
+    margin-bottom: 30px;
+  }
+
+  .form-details input {
+    width: 100%;
+  }
+
+  .form-details textarea {
+    width: 100%;
+    min-height: 120px;
+    color: white;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  .button button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .footer-container {
+    margin-top: 20px;
+  }
+}
+
+
+/* =========================
+   MOBILE DEVICES
+   Up to 768px
+   ========================= */
+
+@media (max-width: 768px) {
+
+  nav h3 {
+    font-size: 20px;
+    padding: 12px 15px;
+  }
+
+  .form-container {
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    padding: 30px 20px;
+  }
+
+  .form-dashboard {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .head-info {
+    margin-bottom: 30px;
+  }
+
+  .head-info h1 {
+    font-size: 25px;
+  }
+
+  .form-details input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .form-details textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    resize: vertical;
+  }
+
+  .button button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .footer-container {
+    height: auto;
+    padding: 15px 10px;
+    margin-top: 20px;
+  }
+
+  .footer-container > h5 {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE DEVICES
+   Up to 480px
+   ========================= */
+
+@media (max-width: 480px) {
+
+  nav h3 {
+    font-size: 18px;
+    padding: 10px 12px;
+  }
+
+  .form-container {
+    padding: 20px 15px;
+  }
+
+  .form-dashboard {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .head-info {
+    margin-bottom: 25px;
+  }
+
+  .head-info h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .form-details input {
+    padding: 10px;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .form-details textarea {
+    min-height: 100px;
+    font-size: 13px;
+  }
+
+  .button button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .footer-container > h5 {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+   Up to 300px
+   ========================= */
+
+@media (max-width: 300px) {
+
+  nav h3 {
+    font-size: 16px;
+  }
+
+  .form-container {
+    padding: 15px 10px;
+  }
+
+  .form-dashboard {
+    padding: 10px;
+  }
+
+  .head-info h1 {
+    font-size: 19px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .form-details input,
+  .form-details textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .button button {
+    font-size: 12px;
+    padding: 9px;
+  }
+
+  .footer-container > h5 {
+    font-size: 10px;
+  }
+}
